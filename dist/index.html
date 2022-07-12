@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script
+      src="https://kit.fontawesome.com/d57c1f68da.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"
+    ></script>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="/assets/index.edf18d91.css">
+  </head>
+  <body>
+    
+    <nav class="bg-black  w-[100%] sticky top-0 z-50 h-12 flex justify-between">
+      <div class="flex items-center mx-0">
+        <img
+          class="w-5 mx-4 rounded-full"
+          src="https://i.ibb.co/R98cP0w/Whats-App-Image-2022-06-29-at-1-49-59-PM.jpg"
+          alt="Whats-App-Image-2022-06-29-at-1-49-59-PM"
+        />
+        <h1 class="text-white font-bold">Deepak</h1>
+      </div>
+
+      <div class="flex md:hidden p-1 flex-wrap">
+        <div class="w-full sm:w-6/12 md:w-4/12 px-4">
+          <div class="relative inline-flex align-middle w-full">
+            <button
+              class="text-white py-3 font-bold uppercase text-xs px-4 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button"
+              onclick="openDropdown(event,'dropdown-example-1')"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div
+              class="hidden bg-gray-900 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-3"
+              style="min-width: 12rem"
+              id="dropdown-example-1"
+            >
+              <a
+                href="#"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-800"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-800"
+              >
+                Products
+              </a>
+              <a
+                href="#"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-800"
+              >
+                About Us
+              </a>
+              <a
+                href="#"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-800"
+              >
+                Contact Us
+              </a>
+
+              <a
+                href="#"
+                class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-800"
+              >
+                SignIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Required popper.js -->
+      <script
+        src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        charset="utf-8"
+      ></script>
+      <script>
+        function openDropdown(event, dropdownID) {
+          let element = event.target;
+          while (element.nodeName !== "BUTTON") {
+            element = element.parentNode;
+          }
+          var popper = Popper.createPopper(
+            element,
+            document.getElementById(dropdownID),
+            {
+              placement: "bottom-start",
+            }
+          );
+          document.getElementById(dropdownID).classList.toggle("hidden");
+          document.getElementById(dropdownID).classList.toggle("block");
+        }
+      </script>
+      <ul
+        class="md:px-11 hidden md:visible md:flex md:h-12 md:py-3 md:justify-end md:text-white md:space-x-6"
+      >
+        <li>Home</li>
+        <li>Products</li>
+        <li>About Us</li>
+        <li>Contacts US</li>
+        <li>Sign In</li>
+      </ul>
+    </nav>
+    <main>
+      <div
+        class="bg-cover main bg-[url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80')] lg:py-80 sm:py-72 py-[90%]"
+      >
+        <div class="text-4xl pl-5 text-white text-center">
+          <h1 class="font-bold">Hi, it's me Deepak</h1>
+          <h2>I am a Computer Science Enginnering Student at GGSIPU</h2>
+        </div>
+      </div>
+    </main>
+
+    <div class="text-center py-6">
+      <div class="font-bold pb-4 text-4xl">About Me</div>
+      <div class="items-center md:flex">
+        <img
+          class=" sm:w-[100%] pl-[15%] pr-[15%] md:pl-[5%] md:pr-[5px] "
+          src="/assets/profile.7a972413.jpeg"
+          alt=""
+        />
+        <p class="py-7 px-16">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem
+          sit modi, fugiat dignissimos repudiandae in aliquid enim non
+          consequatur ad expedita cupiditate, alias nulla quibusdam doloremque
+          voluptas sed illum eaque, delectus necessitatibus velit? Omnis beatae
+          maiores iste facere illo. Repellat quaerat voluptate pariatur
+          quibusdam fugiat, delectus laudantium, nemo eum inventore quod aliquam
+          dignissimos ea eveniet quisquam asperiores odit maiores, nulla facere
+          placeat. Ex, hic nostrum id incidunt beatae dolorem quidem eius
+          corporis ab ipsa, eos error eveniet. Rem sit fugit repellendus,
+          possimus consequatur quod officia vel error quis, facere provident
+          neque animi labore laboriosam a quisquam non sed eum.
+        </p>
+      </div>
+    </div>
+    <div class="text-center">
+      <h1 class="font-bold text-4xl">Portfolio</h1>
+
+      <div class="my-9 xsm:px-[13%] sm:px-[10%]  px-[6%] md:space-x-16 md:flex">
+        <div class="">
+          <div class="  pt-4 rounded overflow-hidden shadow-lg">
+            <img
+              class="w-full"
+              src="https://media.istockphoto.com/photos/books-picture-id949118068?k=20&m=949118068&s=612x612&w=0&h=e8tiaCdluEA9IS_I7ytStcx--toLbovf3U74v-LfNAk="
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#photography</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#travel</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#winter</span
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class=" pt-6 rounded overflow-hidden shadow-lg">
+            <img
+              class="w-full"
+              src="https://media.istockphoto.com/photos/books-picture-id949118068?k=20&m=949118068&s=612x612&w=0&h=e8tiaCdluEA9IS_I7ytStcx--toLbovf3U74v-LfNAk="
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#photography</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#travel</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#winter</span
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class=" pt-6 rounded overflow-hidden shadow-lg">
+            <img
+              class="w-full"
+              src="https://media.istockphoto.com/photos/books-picture-id949118068?k=20&m=949118068&s=612x612&w=0&h=e8tiaCdluEA9IS_I7ytStcx--toLbovf3U74v-LfNAk="
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#photography</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#travel</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#winter</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:my-20 xsm:px-[13%] px-[6%] md:space-x-16 md:flex ">
+        <div class="">
+          <div class=" lg:pt-6 rounded overflow-hidden shadow-lg">
+            <img
+              class="w-full"
+              src="https://media.istockphoto.com/photos/books-picture-id949118068?k=20&m=949118068&s=612x612&w=0&h=e8tiaCdluEA9IS_I7ytStcx--toLbovf3U74v-LfNAk="
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#photography</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#travel</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#winter</span
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class=" pt-6 rounded overflow-hidden shadow-lg">
+            <img
+              class="w-full"
+              src="https://media.istockphoto.com/photos/books-picture-id949118068?k=20&m=949118068&s=612x612&w=0&h=e8tiaCdluEA9IS_I7ytStcx--toLbovf3U74v-LfNAk="
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#photography</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#travel</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#winter</span
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class=" pt-6 rounded overflow-hidden shadow-lg">
+            <img
+              class="w-full"
+              src="https://media.istockphoto.com/photos/books-picture-id949118068?k=20&m=949118068&s=612x612&w=0&h=e8tiaCdluEA9IS_I7ytStcx--toLbovf3U74v-LfNAk="
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#photography</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#travel</span
+              >
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >#winter</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" pt-7 mb-32 ">
+      <h1 class="text-center font-bold text-4xl">Contact Me</h1>
+
+      <div class="grid-rows-none pt-8 xsm:px-[10%] px-[6%] md:flex mt-4">
+        <div class="grid-col-6 md:w-[50%] md:h-[200px]">
+          <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+          <div
+            style="
+              max-width: 100%;
+              overflow: hidden;
+              color: red;
+              width: 500px;
+              height: 500px;
+            "
+          >
+            <div
+              id="embedmap-canvas"
+              style="height: 100%; width: 100%; max-width: 100%"
+            >
+              <iframe
+                style="height: 100%; width: 100%; border: 0"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=Shankarpura,+Burari,+Delhi,+110084,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              >
+              </iframe>
+            </div>
+            <a
+              class="googlemaps-html"
+              href="https://www.embed-map.com"
+              id="get-data-forembedmap"
+              >https://www.embed-map.com</a
+            >
+            <style>
+              #embedmap-canvas img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
+          </div>
+        </div>
+
+        <div class=" lg:pl-3   rounded-lg  bg-white  max-w-md">
+            <h1 class="text-center lg:pl-0 sm:pl-[20%] font-bold text-4xl pt-12">Enter Details</h1>
+          <form class="lg:w-[200%] sm:w-[112%] md:w-[120%] md:px-8 pt-10" netlify>
+            <div class="form-group mb-6">
+              <input
+                type="text"
+                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleInput7"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group mb-6">
+              <input
+                type="email"
+                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleInput8"
+                placeholder="Email address"
+              />
+            </div>
+            <div class="form-group mb-6">
+              <textarea
+                class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                id="exampleFormControlTextarea13"
+                rows="3"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div class="form-group form-check text-center mb-6">
+              <input
+                type="checkbox"
+                class="form-check-input appearance-none h-4 w-4 border border-gray-700 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+                id="exampleCheck87"
+                checked
+              />
+              <label
+                class="form-check-label inline-block text-gray-800"
+                for="exampleCheck87"
+                >Send me a copy of this message</label
+              >
+            </div>
+            <button
+              type="submit"
+              class="w-full px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
